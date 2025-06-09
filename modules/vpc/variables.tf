@@ -16,6 +16,6 @@ variable "region" {
   description = "specify region"
 }
 
-variable "subnet_ids" {
+/*variable "subnet_ids" {
   type = list(string)
-}
+}*/
