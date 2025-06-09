@@ -9,10 +9,10 @@ variable "vpc_id" {
   type        = string
 }
 
-variable "target_group_a_arn" {
+/*variable "target_group_a_arn" {
   description = "Target group ARN for instance A."
   type        = string
-}
+}*/
 
 variable "subnet_ids" {
   description = "Public subnet IDs for ALB"

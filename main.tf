@@ -1,6 +1,6 @@
 module "vpc" {
   source     = "./modules/vpc" #how to know which values we need to give
-  subnet_ids = module.vpc.subnet_ids
+  #subnet_ids = module.vpc.subnet_ids
 }
 
 module "ec2" {
@@ -19,5 +19,5 @@ module "alb" {
   vpc_id             = module.vpc.vpc_id
   subnet_ids         = module.vpc.subnet_ids
   ec2_instance_id    = module.ec2.instance_ids # From EC2 module output
-  target_group_a_arn = module.alb.target_group_a_arn
+  #target_group_a_arn = module.alb.target_group_a_arn
 }
